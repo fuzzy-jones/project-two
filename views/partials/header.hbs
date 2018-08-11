@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default" role="navigation" id="navbarheader">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle nav</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Logo text or image -->
+            <a class="navbar-brand" href="/">Your Library</a>
+
+        </div>
+        <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="current"><a href="/">Home</a></li>
+                {{!-- <li><a href="#about">About</a></li> --}}
+                <!--<li><a href="/groups">Groups</a></li>                -->
+                {{#if login}}
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Books</a>
+                    <div class="dropdown-menu">
+                       <ul> <a class="dropdown-item" href="/books/mybooks">My Books</a></ul>
+                        <ul><a class="dropdown-item" href="/books/postbooks">Post a Book</a></ul>
+                        <ul> <a class="dropdown-item" href="/books/books">Search Books</a></ul>
+                    </div>
+                </li>
+                    <li><a href="/user/logout">Log Out</a></li>
+                {{else}}
+                    <li><a href="/user/signup">Sign Up</a></li>
+                    <li><a href="/user/signin">Log In</a></li>
+                {{/if}}
+                {{!-- <li><a href="#team">Team</a></li> --}}
+                {{!-- <li><a href="#contact">Contact</a></li> --}}
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,115 @@
+/* #about-img {
+    height: 350px;
+} */
+@font-face {
+    font-family: myFirstFont;
+    src: url("../fonts/booksandbooks.ttf");
+}
+
+#header-font1 {
+    color: black;
+    font-size: 86px;
+    font-family: myFirstFont;
+    
+    text-shadow: 1px 1px 1px #fff,
+        0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
+        	
+    /* text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+}
+
+#header-font2 {
+    color: black;
+    font-size: 32px;
+    font-family: myFirstFont;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#parallax3 {
+	background-image: url(../images/oldbooks.jpg);
+}
+
+.booklist, .userlist {
+    padding: 10px;
+    font-size: 18px;
+    /* font-weight: bold; */
+    border: 2px solid black;
+    /* background: white; */
+    margin-bottom: 5px;
+}
+
+.removebookbutton {
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 20px;
+    border: 1px solid red;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+#getuseremail, #usersbooks, #requestbook {
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 20px;
+    border: 2px solid #00C8C5;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+#mybookmodal {
+    padding-top: 100px;
+}
+
+#sign-up-text {
+    font-size: 18px;
+}
+
+#displaymybooks {
+    list-style-type: none;
+}
+
+#displaybooks {
+    list-style-type: none;
+}
+
+#borrowedBooks {
+    list-style-type: none; 
+}
+
+.booklist img {
+    float: left;
+    margin: 0 15px 0 0;
+    max-width: 100px;
+}
+
+.booklist h3 {
+    font-weight: bold;
+}
+
+/* .booklist p {
+    font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  } */
+
+.booklist {
+    padding: 10px;
+    overflow: auto;
+    border: solid 1px black;
+    margin-bottom: 5px;
+}
+
+.booklist:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+
+nav.navbar{
+	position: fixed;
+	top: 0px;
+	margin-bottom: 0px;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	border-radius: 0px;
+	transition: all 0.2s;
+}
+
